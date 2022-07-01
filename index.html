@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>tip calculator</h1>
+
+      <div class="content">
+        <div id="feedback">
+          <p>Bill Amount Cannot Be Blank</p> 
+          <p>Number Of Users Must Be Greater Than Zero </p>
+          <p>You Must Select A Service</p>
+        </div>
+        <h2>how much was your bill ?</h2>
+        <div class="input-area">
+          <div class="square"><i class="fa-solid fa-dollar-sign"></i></div>
+          <input id="bill" type="number" />
+        </div>
+        <h2>how many people sharing the bill</h2>
+
+        <div class="input-area">
+          <div class="square"><i class="fa-solid fa-user"></i></div>
+          <input id="num" type="number" />
+        </div>
+        <h2>how was your service</h2>
+        <select>
+          <option value="" disabled selected>Choose</option>
+          <option value="great">Great - 20%</option>
+          <option value="good">Good - 10%</option>
+          <option value="bad">Bad - 2%</option>
+        </select>
+        <button>Calculate</button>
+        <div id="display-area">
+          <h2>Tip amount <span id="tip"></span></h2>
+          <h2>Total amount <span id="total"></span></h2>
+          <h2>Each person owns <span id="share"></span></h2>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
